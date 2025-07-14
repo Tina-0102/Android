@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="支出编辑"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+    <Button
+        android:id="@+id/edit_sr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改支出"
+        android:background="@drawable/shap_item_cellcolor_bg"
+        android:textSize="23sp"/>
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+    <Button
+        android:id="@+id/edit_srsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除支出"
+        android:background="@drawable/shap_item_cellcolor_bg"
+        android:textSize="23sp"/>
+
+
+
+</LinearLayout>

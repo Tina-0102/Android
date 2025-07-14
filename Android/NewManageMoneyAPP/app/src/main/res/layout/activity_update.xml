@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".dbActivity.UpdateActivity">
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+        <EditText
+            android:id="@+id/editText_threeinputsno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入要查询的项目名称"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/button_threequery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_bg"
+            android:text="查询"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editText_threesno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="项目名称"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/editText_threename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="金额"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/editText_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="日期时间"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/editText_threedep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="类别"
+        android:textSize="25sp"/>
+
+
+    <Button
+        android:id="@+id/button_threemodify"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/login_button_bg"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="修改"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</LinearLayout>

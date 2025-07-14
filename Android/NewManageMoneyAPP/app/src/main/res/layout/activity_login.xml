@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".LoginActivity">
+<!--    android:background="#1A2040"-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/setting"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+
+                    />
+            </LinearLayout>
+
+            <com.example.newmanagemoneyapp.RoundRectImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/tb"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="理财助手"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <LinearLayout style="@style/LoginLayoutStyle">
+
+                <ImageView
+                    style="@style/LoginIconStyle"
+                    android:src="@mipmap/mine_blue" />
+
+                <EditText
+                    android:id="@+id/lg_user"
+                    style="@style/LoginEditStyle"
+                    android:ellipsize="end"
+                    android:hint="请输入用户名"
+                    android:lines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginLayoutStyle">
+
+                <ImageView
+                    style="@style/LoginIconStyle"
+                    android:src="@mipmap/password" />
+
+                <EditText
+                    android:id="@+id/lg_psd"
+                    style="@style/LoginEditStyle"
+                    android:ellipsize="end"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:singleLine="true" />
+                <!--admingzky-->
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/login_button_bg"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titleTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:onClick="register"
+                    android:background="@drawable/login_button_bg"
+                    android:text="注册"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titleTextSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

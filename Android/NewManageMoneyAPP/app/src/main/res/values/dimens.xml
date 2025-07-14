@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divderHeight">1dp</dimen>
+    <dimen name="screenBtnTextSize">11sp</dimen>
+    <dimen name="contentTextSize">10sp</dimen>
+    <dimen name="smalltitleTextSize">12sp</dimen>
+    <dimen name="titleTextSize">13sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="line_margin">30dp</dimen>
+    <dimen name="ed_height">40dp</dimen>
+    <dimen name="cell_inside_margin">5dp</dimen>
+    <dimen name="common_left_margin">15dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="base_action_bar_height">48.0dip</dimen>
+    <dimen name="base_nav_height">60dip</dimen>
+    <dimen name="base_msg_height">17dip</dimen>
+</resources>

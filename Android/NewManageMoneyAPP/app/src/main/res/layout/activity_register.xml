@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".RegisterActivity">
+    <!--    android:background="#1A2040"-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/setting"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/LoginLayoutStyle"
+                android:layout_marginTop="80dp"
+                >
+
+                <ImageView
+                    style="@style/LoginIconStyle"
+                    android:src="@mipmap/mine_blue" />
+
+                <EditText
+                    android:id="@+id/re_user"
+                    style="@style/LoginEditStyle"
+                    android:ellipsize="end"
+                    android:hint="请输入注册账号"
+                    android:lines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginLayoutStyle"
+                android:layout_marginTop="40dp"
+                >
+
+                <ImageView
+                    style="@style/LoginIconStyle"
+                    android:src="@mipmap/password" />
+
+                <EditText
+                    android:id="@+id/re_psd"
+                    style="@style/LoginEditStyle"
+                    android:ellipsize="end"
+                    android:hint="请输入注册密码"
+                    android:lines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LoginLayoutStyle"
+                android:layout_marginTop="40dp"
+                >
+
+                <ImageView
+                    style="@style/LoginIconStyle"
+                    android:src="@mipmap/password" />
+
+                <EditText
+                    android:id="@+id/re_psd2"
+                    style="@style/LoginEditStyle"
+                    android:ellipsize="end"
+                    android:hint="请再次输入注册密码"
+                    android:lines="1"
+                    android:singleLine="true" />
+                <!--admingzky-->
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <Button
+                    android:id="@+id/re_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/login_button_bg"
+                    android:text="注册"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titleTextSize" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
